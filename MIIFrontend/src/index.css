@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.default-font-size {
+  font-size: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.changed-font-size {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --primary-color: #a01213;
+  --secondary-bgColor: #f1f1f1;
+  --text-bgColor: #d9d9d9;
+} 
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+} 
+
+.my-smooth-transition {
+  @apply transition-colors duration-500;
+}

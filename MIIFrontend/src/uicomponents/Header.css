@@ -1,0 +1,12 @@
+/* Header.css */
+.header {
+    background-color: #fff;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .logo {
+    max-width: 100px;  /* Adjust the size as needed */
+    height: auto;
+  }
+  
